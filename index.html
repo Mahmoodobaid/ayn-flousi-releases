@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="متجر أين فلوسي الرسمي لتنزيل أحدث إصدار Android.">
+  <title>متجر أين فلوسي</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;color-scheme:light dark}
+    body{margin:0;background:#0b1220;color:#eef3f8}
+    main{max-width:860px;margin:auto;padding:48px 20px}
+    .card{background:#121c2d;border:1px solid #26364e;border-radius:24px;padding:28px;box-shadow:0 18px 50px #0005}
+    h1{margin:0 0 8px;font-size:clamp(2rem,7vw,3.6rem)}
+    .muted{color:#aebbd0;line-height:1.8}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:24px 0}
+    .metric{background:#0e1726;border-radius:16px;padding:14px}
+    .metric b{display:block;margin-top:6px;word-break:break-word}
+    .button{display:inline-block;background:#2f81f7;color:white;text-decoration:none;font-weight:800;padding:13px 18px;border-radius:14px;margin:4px 0}
+    .secondary{background:#25344a}
+    ul{line-height:1.9}
+    code{word-break:break-all}
+    footer{margin-top:24px;color:#8fa0b7;font-size:.92rem}
+  </style>
+</head>
+<body>
+<main>
+  <section class="card">
+    <h1>أين فلوسي</h1>
+    <p class="muted">المتجر الرسمي لتنزيل آخر نسخة Android. التطبيق يتحقق من التحديثات عبر خادم الاشتراك الموثوق، بينما تستضاف ملفات APK العامة على GitHub Releases.</p>
+    <div class="grid">
+      <div class="metric">الإصدار<b id="version">...</b></div>
+      <div class="metric">الحجم<b id="size">...</b></div>
+      <div class="metric">تاريخ النشر<b id="date">...</b></div>
+    </div>
+    <p><a id="download" class="button" href="#">تنزيل أحدث APK</a></p>
+    <p><a class="button secondary" href="https://github.com/Mahmoodobaid/ayn-flousi-releases/releases">كل الإصدارات</a></p>
+    <h2>ما الجديد</h2>
+    <ul id="notes"><li>جارٍ تحميل بيانات الإصدار...</li></ul>
+    <h2>التحقق</h2>
+    <p class="muted">SHA-256: <code id="sha">...</code></p>
+    <footer><a href="privacy.html">سياسة الخصوصية</a></footer>
+  </section>
+</main>
+<script>
+(async()=>{
+  try{
+    const r=await fetch('latest.json',{cache:'no-store'});
+    if(!r.ok) throw new Error('manifest');
+    const x=await r.json();
+    document.getElementById('version').textContent=x.version||x.versionName||'-';
+    document.getElementById('size').textContent=x.sizeBytes?((x.sizeBytes/1048576).toFixed(1)+' MB'):'-';
+    document.getElementById('date').textContent=x.publishedAt?new Date(x.publishedAt).toLocaleString('ar'):'-';
+    document.getElementById('download').href=x.downloadUrl;
+    document.getElementById('sha').textContent=x.sha256||'-';
+    const notes=Array.isArray(x.releaseNotes)?x.releaseNotes:[];
+    document.getElementById('notes').innerHTML=notes.length?notes.map(n=>'<li>'+String(n).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))+'</li>').join(''):'<li>لا توجد ملاحظات إضافية.</li>';
+  }catch(e){
+    document.getElementById('notes').innerHTML='<li>تعذر تحميل بيانات الإصدار. استخدم رابط كل الإصدارات.</li>';
+  }
+})();
+</script>
+</body>
+</html>
