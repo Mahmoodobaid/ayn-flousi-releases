@@ -3,20 +3,21 @@
   "productCode": "send_message",
   "packageName": "com.sendmessage.send_message",
   "platform": "android",
-  "version": "1.6.17+25",
-  "versionName": "1.6.17",
-  "versionCode": 25,
+  "version": "1.6.18+26",
+  "versionName": "1.6.18",
+  "versionCode": 26,
   "minimumVersion": "",
   "required": false,
-  "downloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/v1.6.17-build25/ayn-flousi-1.6.17-build25.apk",
+  "downloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/v1.6.18-build26/ayn-flousi-1.6.18-build26.apk",
   "storeUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases",
-  "sha256": "DF37EA467A47C2CDA5B06241B01DB1B9CBA776B002E249B893A08BF539E92104",
-  "sizeBytes": 94680275,
-  "publishedAt": "2026-09-25T02:05:42.0780006Z",
+  "sha256": "24493AD12003496AEC4741D3602F4B9A9E308826ED24F1C3A3D12A8A531F35B0",
+  "sizeBytes": 100695895,
+  "publishedAt": "2026-10-01T00:48:52.9202285Z",
   "releaseNotes": [
-    "إضافة متجر أين فلوسي العام",
-    "استضافة APK عبر GitHub Releases",
-    "الحفاظ على التحديث الاختياري والإجباري وRollback من الخادم التجاري",
-    "التحقق من SHA-256 والحجم قبل فتح المثبت"
+    "إضافة جدول التحصيل الأسبوعي مع تبويبات أيام الأسبوع والبحث الموحد للحسابات",
+    "دعم مشاركة وحفظ وطباعة جدول التحصيل بصيغ Excel وPDF",
+    "استئناف تنزيل التحديث تلقائيًا بعد انقطاع الاتصال أو إعادة فتح التطبيق",
+    "التحقق من الحجم وSHA-256 ومن هوية وتوقيع APK قبل فتح مثبت Android",
+    "الإبقاء على الخادم التجاري كسلطة التحديث والـ Rollback"
   ]
 }
