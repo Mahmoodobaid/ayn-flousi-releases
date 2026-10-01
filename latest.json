@@ -3,21 +3,21 @@
   "productCode": "send_message",
   "packageName": "com.sendmessage.send_message",
   "platform": "android",
-  "version": "1.6.18+26",
-  "versionName": "1.6.18",
-  "versionCode": 26,
+  "version": "1.6.19+27",
+  "versionName": "1.6.19",
+  "versionCode": 27,
   "minimumVersion": "",
   "required": false,
-  "downloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/v1.6.18-build26/ayn-flousi-1.6.18-build26.apk",
+  "downloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/v1.6.19-build27/ayn-flousi-1.6.19-build27.apk",
   "storeUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases",
-  "sha256": "24493AD12003496AEC4741D3602F4B9A9E308826ED24F1C3A3D12A8A531F35B0",
-  "sizeBytes": 100695895,
-  "publishedAt": "2026-10-01T19:56:41.4893419Z",
+  "sha256": "AFF40E459D2716C6E631817C1AC675304ECF777508919C853B6DA73609FF60AC",
+  "sizeBytes": 100827111,
+  "publishedAt": "2026-10-01T21:57:13.3900511Z",
   "releaseNotes": [
-    "إضافة جدول التحصيل الأسبوعي مع تبويبات أيام الأسبوع والبحث الموحد للحسابات",
-    "دعم مشاركة وحفظ وطباعة جدول التحصيل بصيغ Excel وPDF",
-    "استئناف تنزيل التحديث تلقائيًا بعد انقطاع الاتصال أو إعادة فتح التطبيق",
-    "التحقق من الحجم وSHA-256 ومن هوية وتوقيع APK قبل فتح مثبت Android",
-    "الإبقاء على الخادم التجاري كسلطة التحديث والـ Rollback"
+    "تطوير شاشة الرسائل المجدولة والسريعة وفتح الحملة للتعديل الكامل عند الضغط عليها",
+    "إضافة وتعديل وحذف حسابات الحملة مع جدول واضح ورسالة مستقلة لكل حساب",
+    "إضافة رسالة عامة تتوزع تلقائيًا على الحسابات مع دعم تخصيص الرسالة لكل حساب",
+    "تعديل تاريخ ووقت الإرسال ونمط التكرار وأيام الأسبوع ويوم الشهر وتاريخ الانتهاء",
+    "حفظ جلسة نشر AAL2 محليًا بشكل مشفر وإعادة استخدامها لتقليل طلب بيانات الدخول وMFA"
   ]
 }
