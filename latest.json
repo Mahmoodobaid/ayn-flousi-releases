@@ -3,21 +3,21 @@
   "productCode": "send_message",
   "packageName": "com.sendmessage.send_message",
   "platform": "android",
-  "version": "1.6.19+27",
-  "versionName": "1.6.19",
-  "versionCode": 27,
+  "version": "1.6.20+28",
+  "versionName": "1.6.20",
+  "versionCode": 28,
   "minimumVersion": "",
   "required": false,
-  "downloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/v1.6.19-build27/ayn-flousi-1.6.19-build27.apk",
+  "downloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/v1.6.20-build28/ayn-flousi-1.6.20-build28.apk",
   "storeUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases",
-  "sha256": "AFF40E459D2716C6E631817C1AC675304ECF777508919C853B6DA73609FF60AC",
+  "sha256": "59E089F402E63BE7FBFF1769729F2345ADDA58E19D8A7594CA9B682011E92070",
   "sizeBytes": 100827111,
-  "publishedAt": "2026-10-01T21:57:13.3900511Z",
+  "publishedAt": "2026-10-02T00:09:52.2751732Z",
   "releaseNotes": [
-    "تطوير شاشة الرسائل المجدولة والسريعة وفتح الحملة للتعديل الكامل عند الضغط عليها",
-    "إضافة وتعديل وحذف حسابات الحملة مع جدول واضح ورسالة مستقلة لكل حساب",
-    "إضافة رسالة عامة تتوزع تلقائيًا على الحسابات مع دعم تخصيص الرسالة لكل حساب",
-    "تعديل تاريخ ووقت الإرسال ونمط التكرار وأيام الأسبوع ويوم الشهر وتاريخ الانتهاء",
-    "حفظ جلسة نشر AAL2 محليًا بشكل مشفر وإعادة استخدامها لتقليل طلب بيانات الدخول وMFA"
+    "تطوير أين فلوسي ليعمل Offline-First بعد أول تحقق موثوق من الاشتراك",
+    "فتح التطبيق مباشرة من الترخيص المحلي دون انتظار اتصال الشبكة",
+    "التحقق من الاشتراك تلقائيًا في الخلفية عند التشغيل والعودة للتطبيق ودوريًا أثناء الاستخدام",
+    "عدم تعطيل التطبيق بسبب انقطاع الإنترنت أو مهلة الخادم ما دام الاشتراك المحلي الموثوق صالحًا",
+    "استبدال بطاقة وضع عدم الاتصال بمؤشر لوني أنيق: عنوان الواجهة الرئيسية يتحول إلى البرتقالي أثناء العمل Offline"
   ]
 }
