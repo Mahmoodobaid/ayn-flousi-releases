@@ -3,21 +3,19 @@
   "productCode": "send_message",
   "packageName": "com.sendmessage.send_message",
   "platform": "android",
-  "version": "1.6.20+28",
-  "versionName": "1.6.20",
-  "versionCode": 28,
+  "version": "1.6.23+31",
+  "versionName": "1.6.23",
+  "versionCode": 31,
   "minimumVersion": "",
   "required": false,
-  "downloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/v1.6.20-build28/ayn-flousi-1.6.20-build28.apk",
+  "downloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/v1.6.23-build31/ayn-flousi-1.6.23-build31.apk",
   "storeUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases",
-  "sha256": "EC81748A1E124FFCDF45FF576076717509504FC48E2D2178DF0633530B73D181",
-  "sizeBytes": 100909031,
-  "publishedAt": "2026-10-11T04:23:36.4239540Z",
+  "sha256": "405D16E5C782394102756F1DD0FBD2F29334C79F1F215A845034437C884FCDFF",
+  "sizeBytes": 100910191,
+  "publishedAt": "2026-10-11T21:47:38.6333342Z",
   "releaseNotes": [
-    "تطوير أين فلوسي ليعمل Offline-First بعد أول تحقق موثوق من الاشتراك",
-    "فتح التطبيق مباشرة من الترخيص المحلي دون انتظار اتصال الشبكة",
-    "التحقق من الاشتراك تلقائيًا في الخلفية عند التشغيل والعودة للتطبيق ودوريًا أثناء الاستخدام",
-    "عدم تعطيل التطبيق بسبب انقطاع الإنترنت أو مهلة الخادم ما دام الاشتراك المحلي الموثوق صالحًا",
-    "استبدال بطاقة وضع عدم الاتصال بمؤشر لوني أنيق: عنوان الواجهة الرئيسية يتحول إلى البرتقالي أثناء العمل Offline"
+    "تسجيل دخول واحد آمن لجميع تطبيقات الحزمة باستخدام هوية Android المشتركة.",
+    "استعادة الحساب تلقائيًا عند الانتقال إلى تطبيق آخر أو إعادة تثبيته مع بقاء تطبيق موثوق مثبتًا.",
+    "توحيد حساب الشركة واسم المستخدم ورقم الهاتف والاشتراك عبر التطبيقات الثلاثة."
   ]
 }
