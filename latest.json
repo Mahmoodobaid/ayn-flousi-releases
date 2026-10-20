@@ -3,19 +3,19 @@
   "productCode": "send_message",
   "packageName": "com.sendmessage.send_message",
   "platform": "android",
-  "version": "1.6.24+32",
-  "versionName": "1.6.24",
-  "versionCode": 32,
+  "version": "1.6.25+34",
+  "versionName": "1.6.25",
+  "versionCode": 34,
   "minimumVersion": "",
   "required": false,
-  "downloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/v1.6.24-build32/ayn-flousi-1.6.24-build32.apk",
+  "downloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/latest/ayn-flousi-latest.apk",
+  "versionedDownloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/v1.6.25-build34/ayn-flousi-1.6.25-build34.apk",
   "storeUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases",
-  "sha256": "1EC214CA85C8CFCBA03C221886047EBBFDC683DAA0A3E1E7B2B29DD21F6CD24A",
-  "sizeBytes": 100992179,
-  "publishedAt": "2026-10-12T22:24:21.6484100Z",
+  "sha256": "0048A4FE4F1A7A9F27BBABA2B3E9BD67C86890EB4A791313966C412C4E1FBAE4",
+  "sizeBytes": 100992275,
+  "publishedAt": "2026-10-20T20:17:21.2868209Z",
   "releaseNotes": [
-    "تحسين التسجيل والاستعادة عبر حزمة الاشتراك الموحدة.",
-    "دعم رمز COLL أحادي الاستخدام لاستعادة الحساب وتجديد الاشتراك المنتهي.",
-    "تحسينات في شاشة إدارة الاشتراكات وإرسال الرموز للمستخدمين."
+    "تفعيل الأرشفة المؤقتة للحسابات الغائبة عن كشف Excel الكامل افتراضيًا، مع ترحيل إعدادات النسخ الحالية.",
+    "يحافظ التطبيق على بيانات الحساب وأرقام الهاتف ويعيد الحساب عند ظهوره مجددًا؛ يمكن اختيار المراجعة اليدوية عند استخدام ملف جزئي."
   ]
 }
