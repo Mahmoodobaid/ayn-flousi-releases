@@ -13,7 +13,7 @@
   "storeUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases",
   "sha256": "67FCC88B43584FBB3A3E942C6FEFF1B4CE6C647E6EBFCDDE5E6BE7D9688CA8A8",
   "sizeBytes": 101074223,
-  "publishedAt": "2026-10-20T20:58:13.0702443Z",
+  "publishedAt": "2026-10-20T20:54:37.2804535Z",
   "releaseNotes": [
     "إصلاح إلغاء دفعة الرسائل بعد إيقافها مؤقتًا ومنع بدء رسائل جديدة بعد الإلغاء.",
     "حفظ تقارير تسليم SMS من Android وإظهار «تم الاستلام» عند ورود تقرير الشبكة.",
