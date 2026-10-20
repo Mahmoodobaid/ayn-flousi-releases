@@ -3,19 +3,21 @@
   "productCode": "send_message",
   "packageName": "com.sendmessage.send_message",
   "platform": "android",
-  "version": "1.6.25+34",
-  "versionName": "1.6.25",
-  "versionCode": 34,
+  "version": "1.6.26+35",
+  "versionName": "1.6.26",
+  "versionCode": 35,
   "minimumVersion": "",
   "required": false,
   "downloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/latest/ayn-flousi-latest.apk",
-  "versionedDownloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/v1.6.25-build34/ayn-flousi-1.6.25-build34.apk",
+  "versionedDownloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/v1.6.26-build35/ayn-flousi-1.6.26-build35.apk",
   "storeUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases",
-  "sha256": "0048A4FE4F1A7A9F27BBABA2B3E9BD67C86890EB4A791313966C412C4E1FBAE4",
-  "sizeBytes": 100992275,
-  "publishedAt": "2026-10-20T20:17:21.2868209Z",
+  "sha256": "67FCC88B43584FBB3A3E942C6FEFF1B4CE6C647E6EBFCDDE5E6BE7D9688CA8A8",
+  "sizeBytes": 101074223,
+  "publishedAt": "2026-10-20T20:54:37.2804535Z",
   "releaseNotes": [
-    "تفعيل الأرشفة المؤقتة للحسابات الغائبة عن كشف Excel الكامل افتراضيًا، مع ترحيل إعدادات النسخ الحالية.",
-    "يحافظ التطبيق على بيانات الحساب وأرقام الهاتف ويعيد الحساب عند ظهوره مجددًا؛ يمكن اختيار المراجعة اليدوية عند استخدام ملف جزئي."
+    "إصلاح إلغاء دفعة الرسائل بعد إيقافها مؤقتًا ومنع بدء رسائل جديدة بعد الإلغاء.",
+    "حفظ تقارير تسليم SMS من Android وإظهار «تم الاستلام» عند ورود تقرير الشبكة.",
+    "تحسين استعادة جلسة الاشتراك الموحدة وإتاحة استعادة الحساب برقم الهاتف عند الحاجة.",
+    "إصلاحات وتحسينات عامة."
   ]
 }
