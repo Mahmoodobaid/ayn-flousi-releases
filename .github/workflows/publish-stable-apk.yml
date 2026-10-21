@@ -1,0 +1,57 @@
+name: Publish permanent APK alias
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_tag:
+        description: Published version tag
+        required: true
+        type: string
+      source_asset:
+        description: Versioned APK asset name
+        required: true
+        type: string
+      sha256:
+        description: Expected SHA-256 of the APK
+        required: true
+        type: string
+      size_bytes:
+        description: Expected APK size in bytes
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify and upload the permanent alias
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_TAG: ${{ inputs.source_tag }}
+          SOURCE_ASSET: ${{ inputs.source_asset }}
+          EXPECTED_SHA256: ${{ inputs.sha256 }}
+          EXPECTED_SIZE_BYTES: ${{ inputs.size_bytes }}
+        run: |
+          set -euo pipefail
+          [[ "$SOURCE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+-build[0-9]+$ ]]
+          [[ "$SOURCE_ASSET" =~ ^ayn-flousi-[0-9]+\.[0-9]+\.[0-9]+-build[0-9]+\.apk$ ]]
+          [[ "$EXPECTED_SHA256" =~ ^[A-Fa-f0-9]{64}$ ]]
+          [[ "$EXPECTED_SIZE_BYTES" =~ ^[0-9]+$ ]]
+          mkdir -p "$RUNNER_TEMP/source"
+          gh release download "$SOURCE_TAG" --repo "$GITHUB_REPOSITORY" --pattern "$SOURCE_ASSET" --dir "$RUNNER_TEMP/source"
+          source_path="$RUNNER_TEMP/source/$SOURCE_ASSET"
+          printf '%s  %s\n' "${EXPECTED_SHA256,,}" "$source_path" | sha256sum --check --status
+          actual_size="$(stat -c %s "$source_path")"
+          [[ "$actual_size" == "$EXPECTED_SIZE_BYTES" ]]
+          alias_path="$RUNNER_TEMP/ayn-flousi-latest.apk"
+          cp "$source_path" "$alias_path"
+          gh release upload latest "$alias_path" --repo "$GITHUB_REPOSITORY" --clobber
+          asset_data="$(gh api "repos/$GITHUB_REPOSITORY/releases/tags/latest" --jq '.assets[] | select(.name == "ayn-flousi-latest.apk") | [.size, .state, .digest] | @tsv')"
+          IFS=$'\t' read -r actual_size state digest <<< "$asset_data"
+          [[ "$actual_size" == "$EXPECTED_SIZE_BYTES" ]]
+          [[ "$state" == uploaded ]]
+          [[ "${digest,,}" == "sha256:${EXPECTED_SHA256,,}" ]]
+          echo "Verified latest APK: $actual_size bytes, $digest"
