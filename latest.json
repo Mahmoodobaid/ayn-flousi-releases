@@ -3,21 +3,22 @@
   "productCode": "send_message",
   "packageName": "com.sendmessage.send_message",
   "platform": "android",
-  "version": "1.6.26+35",
-  "versionName": "1.6.26",
-  "versionCode": 35,
+  "version": "1.6.27+36",
+  "versionName": "1.6.27",
+  "versionCode": 36,
   "minimumVersion": "",
   "required": false,
   "downloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/latest/ayn-flousi-latest.apk",
-  "versionedDownloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/v1.6.26-build35/ayn-flousi-1.6.26-build35.apk",
+  "versionedDownloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/v1.6.27-build36/ayn-flousi-1.6.27-build36.apk",
   "storeUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases",
-  "sha256": "4BD861353C5D349FABA518AEDC0F8203A7ED8CF2BB8EB4061F29DA5B72834EB6",
-  "sizeBytes": 101156235,
-  "publishedAt": "2026-10-22T21:17:37.9811968Z",
+  "sha256": "BFA45AF81870B8086A7251EE169A5CF8CDC45486EA7A3BBBB54B75549BC49F0E",
+  "sizeBytes": 101172619,
+  "publishedAt": "2026-10-22T22:19:48.8157999Z",
   "releaseNotes": [
-    "تنسيق جدول التحصيل بصيغة PDF بأعمدة واضحة للاسم والهاتف والرصيد والعملة، مع تقريب الكسور وفواصل الآلاف.",
-    "تحسين جدولة الرسائل الدورية وإعادة تثبيت مواعيدها بعد إعادة تشغيل الهاتف، مع توضيح صلاحية المنبهات الدقيقة.",
-    "تحديث التطبيق قبل متابعة التسجيل أو الاستعادة عندما يتوفر إصدار أحدث.",
-    "تحسين أمان وموثوقية طلبات استعادة الحساب ورموز التحقق."
+    "تحسين تنسيق خيارات التسجيل والاستعادة على الهاتف لمنع انقسام الكلمات وإظهارها بوضوح.",
+    "استعادة جلسة الاشتراك الموثوقة من تطبيقات المجموعة على الجهاز نفسه عند توفر الاتصال، مع حفظ طلب OTP مؤقتًا وبشكل آمن عند إغلاق التطبيق.",
+    "تحسين تقرير PDF للتحصيل ليعرض اسم الحساب والهاتف والرصيد والعملة مع تقريب الكسور وفواصل الآلاف.",
+    "تحسين جدولة الرسائل وإعادة تثبيت مواعيدها بعد إعادة تشغيل الهاتف.",
+    "التحقق من التحديث قبل متابعة التسجيل أو الاستعادة عند توفر إصدار أحدث."
   ]
 }
