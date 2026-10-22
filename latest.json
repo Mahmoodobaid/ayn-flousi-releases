@@ -11,12 +11,13 @@
   "downloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/latest/ayn-flousi-latest.apk",
   "versionedDownloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/v1.6.26-build35/ayn-flousi-1.6.26-build35.apk",
   "storeUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases",
-  "sha256": "67FCC88B43584FBB3A3E942C6FEFF1B4CE6C647E6EBFCDDE5E6BE7D9688CA8A8",
-  "sizeBytes": 101074223,
-  "publishedAt": "2026-10-20T22:16:09.0359396Z",
+  "sha256": "4BD861353C5D349FABA518AEDC0F8203A7ED8CF2BB8EB4061F29DA5B72834EB6",
+  "sizeBytes": 101156235,
+  "publishedAt": "2026-10-22T21:17:37.9811968Z",
   "releaseNotes": [
-    "إصلاح التسجيل والاستعادة الموحدة.",
-    "إصلاح إلغاء دفعات الرسائل بعد الإيقاف المؤقت.",
-    "حفظ تقارير تسليم الرسائل وإظهار حالة تم الاستلام."
+    "تنسيق جدول التحصيل بصيغة PDF بأعمدة واضحة للاسم والهاتف والرصيد والعملة، مع تقريب الكسور وفواصل الآلاف.",
+    "تحسين جدولة الرسائل الدورية وإعادة تثبيت مواعيدها بعد إعادة تشغيل الهاتف، مع توضيح صلاحية المنبهات الدقيقة.",
+    "تحديث التطبيق قبل متابعة التسجيل أو الاستعادة عندما يتوفر إصدار أحدث.",
+    "تحسين أمان وموثوقية طلبات استعادة الحساب ورموز التحقق."
   ]
 }
