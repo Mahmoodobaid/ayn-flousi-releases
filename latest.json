@@ -6,7 +6,7 @@
   "version": "1.6.28+37",
   "versionName": "1.6.28",
   "versionCode": 37,
-  "minimumVersion": "يُحتسب التأجيل كتواصل حديث في فلتر عدم الإرسال خلال المدة المحددة دون إنشاء رسالة في سجل الإرسال.",
+  "minimumVersion": "",
   "required": false,
   "downloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/latest/ayn-flousi-latest.apk",
   "versionedDownloadUrl": "https://github.com/Mahmoodobaid/ayn-flousi-releases/releases/download/v1.6.28-build37/ayn-flousi-1.6.28-build37.apk",
@@ -15,6 +15,7 @@
   "sizeBytes": 101189147,
   "publishedAt": "2026-11-01T19:13:09.1918864Z",
   "releaseNotes": [
-    "إضافة زر «تأجيل الإرسال» إلى بطاقة الحساب في قائمة الحسابات وبطاقة التفاصيل."
+    "إضافة زر «تأجيل الإرسال» إلى بطاقة الحساب في قائمة الحسابات وبطاقة التفاصيل.",
+    "يُحتسب التأجيل كتواصل حديث في فلتر عدم الإرسال خلال المدة المحددة دون إنشاء رسالة في سجل الإرسال."
   ]
 }
